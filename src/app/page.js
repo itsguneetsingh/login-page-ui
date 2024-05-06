@@ -2,14 +2,10 @@ import React from "react";
 import Image from "next/image";
 import "./stylesheet.css";
 import Link from "next/link";
-import Head from "next/head";
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.png" />
-      </Head>
       <div className="flex justify-center text-white items-center min-h-screen bg-neutral-900">
         <div className="bg-neutral-800 text-white px-9 py-4 max-w-sm flex flex-col items-center rounded-lg">
           <Image
