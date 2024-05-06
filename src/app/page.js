@@ -2,23 +2,29 @@ import React from "react";
 import Image from "next/image";
 import "./stylesheet.css";
 import Link from "next/link";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen bg-neutral-900">
-        <div className="bg-neutral-800 px-9 py-4 max-w-sm flex flex-col items-center rounded-lg">
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
+      <div className="flex justify-center text-white items-center min-h-screen bg-neutral-900">
+        <div className="bg-neutral-800 text-white px-9 py-4 max-w-sm flex flex-col items-center rounded-lg">
           <Image
             src="/avatar-jessica.jpeg"
             height={70}
             width={70}
             className="rounded-full m-4"
           />
-          <span className="text-xl font-semibold m-1">Jessica Randall</span>
+          <span className="text-xl text-white font-semibold m-1">
+            Jessica Randall
+          </span>
           <span className="text-xs font-bold m-1 text-lime-300">
             London, United Kingdom
           </span>
-          <span className=" text-xs m-4">
+          <span className=" text-xs text-white m-4">
             "Front-end developer and avid reader."
           </span>
           <Link href="https://github.com/itsguneetsingh" class="social-media">
@@ -51,7 +57,7 @@ const Home = () => {
         </div>
       </div>
       <center>
-        <div className="font-lg bg-neutral-900">
+        <div className="font-lg text-white bg-neutral-900">
           Challenge by{" "}
           <Link
             href="https://www.frontendmentor.io?ref=challenge"

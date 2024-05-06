@@ -1,5 +1,5 @@
 .social-media {
-  @apply text-xs bg-neutral-700 w-full rounded-md m-2 font-bold p-3 flex items-center justify-center;
+  @apply text-xs bg-neutral-700 w-full rounded-md m-2 font-bold p-3 flex items-center justify-center text-white;
 }
 
 .social-media:hover {
